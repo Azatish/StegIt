@@ -39,7 +39,7 @@ TEXTS = {
         "gen_option_2": " 2. Картинка",
         "gen_option_3": " 3. Видео",
         "gen_option_4": " 4. Текст",
-        "gen_text_options": "\nВыберите задание по текстовой стеганографии:\n random - Случайное задание\n 1 - Использование двойных пробелов\n 2 - Скрытие данных в конечных пробелах\n 3 - Использование невидимых пробелов\n 4 - Замена повторяющихся символов",
+        "gen_text_options": "\nВыберите задание по текстовой стеганографии:\n random - Случайное задание\n 1 - Использование двойных пробелов\n 4 - Замена повторяющихся символов",
         "gen_audio_in_dev": "Аудио-метод находится в разработке. Возврат в главное меню.\n",
         "gen_video_in_dev": "Видео-метод находится в разработке. Возврат в главное меню.\n",
         "gen_image_done": "Сгенерировано задание по стеганографии для изображения.\n",
@@ -48,6 +48,7 @@ TEXTS = {
         "gen_text_task_1": "Используйте двойные пробелы для кодирования скрытых данных (2 пробела = 1, 1 пробел = 0).",
         "gen_text_task_2": "Спрячьте бинарное сообщение в конечных пробелах строк текста.",
         "gen_text_task_3": "Используйте невидимые пробелы (Zero Width Space) для скрытого кодирования.",
+        "gen_text_task_4": "C(rus) => '0', C(eng) => '1'", 
         "ask_for_string": "Введите строку, которую вы хотите скрыть:",
         "ask_for_filename": "Введите имя файла, из которого следует записать данные:",
         "invalid_filename": "Неверное имя файла. Попробуйте снова.",
@@ -84,7 +85,7 @@ TEXTS = {
         "gen_option_2": " 2. Image",
         "gen_option_3": " 3. Video",
         "gen_option_4": " 4. Text",
-        "gen_text_options": "\nSelect a text steganography task:\n random - Random task\n 1 - Using double spaces\n 2 - Hiding data in trailing spaces\n 3 - Using zero-width spaces\n 4 - Replacing repeating characters",
+        "gen_text_options": "\nSelect a text steganography task:\n random - Random task\n 1 - Using double spaces\n 4 - Replacing repeating characters",
         "gen_audio_in_dev": "Audio method is under development. Returning to main menu.\n",
         "gen_video_in_dev": "Video method is under development. Returning to main menu.\n",
         "gen_image_done": "Image steganography task has been generated.\n",
@@ -93,6 +94,7 @@ TEXTS = {
         "gen_text_task_1": "Use double spaces to encode hidden data (2 spaces = 1, 1 space = 0).",
         "gen_text_task_2": "Hide a binary message in trailing spaces of text lines.",
         "gen_text_task_3": "Use zero-width spaces (Zero Width Space) for hidden encoding.",
+        "gen_text_task_4": "C(rus) => '0', C(eng) => '1'",
         "ask_for_string": "Enter the string you want to hide:",
         "ask_for_filename": "Enter the filename from which we are extracting data:",
         "invalid_filename": "Invalid filename. Please try again.",
@@ -392,6 +394,7 @@ def main():
 
     lang = get_language()
     texts = TEXTS[lang]
+
     display_intro(texts)
 
     while True:
